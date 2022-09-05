@@ -1,0 +1,51 @@
+2022-09-05 23:34:11.522 +07:00 [INF] Now listening on: https://localhost:7279
+2022-09-05 23:34:11.540 +07:00 [INF] Now listening on: http://localhost:5279
+2022-09-05 23:34:11.541 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-05 23:34:11.541 +07:00 [INF] Hosting environment: Development
+2022-09-05 23:34:11.542 +07:00 [INF] Content root path: C:\2.projects\study\UltimateWebApi\CompanyEmployees\
+2022-09-05 23:34:12.028 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7279/WeatherForecast - -
+2022-09-05 23:34:12.095 +07:00 [INF] Executing endpoint 'CompanyEmployees.Controllers.WeatherForecastController.Get (CompanyEmployees)'
+2022-09-05 23:34:12.107 +07:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[CompanyEmployees.WeatherForecast] Get() on controller CompanyEmployees.Controllers.WeatherForecastController (CompanyEmployees).
+2022-09-05 23:34:12.109 +07:00 [INF] info
+2022-09-05 23:34:12.109 +07:00 [FTL] critical
+2022-09-05 23:34:12.109 +07:00 [ERR] error
+2022-09-05 23:34:12.109 +07:00 [WRN] warning
+2022-09-05 23:34:12.117 +07:00 [INF] Executing ObjectResult, writing value of type 'CompanyEmployees.WeatherForecast[]'.
+2022-09-05 23:34:12.156 +07:00 [INF] Executed action CompanyEmployees.Controllers.WeatherForecastController.Get (CompanyEmployees) in 45.3628ms
+2022-09-05 23:34:12.158 +07:00 [INF] Executed endpoint 'CompanyEmployees.Controllers.WeatherForecastController.Get (CompanyEmployees)'
+2022-09-05 23:34:12.162 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7279/WeatherForecast - - - 200 - application/json;+charset=utf-8 137.1346ms
+2022-09-05 23:34:48.054 +07:00 [INF] Now listening on: https://localhost:7279
+2022-09-05 23:34:48.070 +07:00 [INF] Now listening on: http://localhost:5279
+2022-09-05 23:34:48.071 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-05 23:34:48.071 +07:00 [INF] Hosting environment: Development
+2022-09-05 23:34:48.071 +07:00 [INF] Content root path: C:\2.projects\study\UltimateWebApi\CompanyEmployees\
+2022-09-05 23:34:48.727 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7279/WeatherForecast - -
+2022-09-05 23:34:48.797 +07:00 [INF] Executing endpoint 'CompanyEmployees.Controllers.WeatherForecastController.Get (CompanyEmployees)'
+2022-09-05 23:34:48.806 +07:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[CompanyEmployees.WeatherForecast] Get() on controller CompanyEmployees.Controllers.WeatherForecastController (CompanyEmployees).
+2022-09-05 23:34:48.810 +07:00 [INF] info
+2022-09-05 23:34:48.810 +07:00 [FTL] critical
+2022-09-05 23:34:48.810 +07:00 [ERR] error
+2022-09-05 23:34:48.810 +07:00 [WRN] warning
+2022-09-05 23:34:48.816 +07:00 [INF] Executing ObjectResult, writing value of type 'CompanyEmployees.WeatherForecast[]'.
+2022-09-05 23:34:48.856 +07:00 [INF] Executed action CompanyEmployees.Controllers.WeatherForecastController.Get (CompanyEmployees) in 44.5537ms
+2022-09-05 23:34:48.858 +07:00 [INF] Executed endpoint 'CompanyEmployees.Controllers.WeatherForecastController.Get (CompanyEmployees)'
+2022-09-05 23:34:48.862 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7279/WeatherForecast - - - 200 - application/json;+charset=utf-8 138.6008ms
+2022-09-05 23:34:49.150 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7279/favicon.ico - -
+2022-09-05 23:34:49.152 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7279/favicon.ico - - - 404 0 - 1.6778ms
+2022-09-05 23:41:23.935 +07:00 [INF] Now listening on: https://localhost:7279
+2022-09-05 23:41:23.961 +07:00 [INF] Now listening on: http://localhost:5279
+2022-09-05 23:41:23.963 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-05 23:41:23.964 +07:00 [INF] Hosting environment: Development
+2022-09-05 23:41:23.964 +07:00 [INF] Content root path: C:\2.projects\study\UltimateWebApi\CompanyEmployees\
+2022-09-05 23:41:24.282 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7279/WeatherForecast - -
+2022-09-05 23:41:24.339 +07:00 [INF] Executing endpoint 'CompanyEmployees.Controllers.WeatherForecastController.Get (CompanyEmployees)'
+2022-09-05 23:41:24.346 +07:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[CompanyEmployees.WeatherForecast] Get() on controller CompanyEmployees.Controllers.WeatherForecastController (CompanyEmployees).
+2022-09-05 23:41:24.347 +07:00 [INF] info
+2022-09-05 23:41:24.347 +07:00 [FTL] critical
+2022-09-05 23:41:24.347 +07:00 [ERR] error
+2022-09-05 23:41:24.347 +07:00 [WRN] warning
+2022-09-05 23:41:24.354 +07:00 [INF] Executing ObjectResult, writing value of type 'CompanyEmployees.WeatherForecast[]'.
+2022-09-05 23:41:24.380 +07:00 [INF] Executed action CompanyEmployees.Controllers.WeatherForecastController.Get (CompanyEmployees) in 29.1039ms
+2022-09-05 23:41:24.381 +07:00 [INF] Executed endpoint 'CompanyEmployees.Controllers.WeatherForecastController.Get (CompanyEmployees)'
+2022-09-05 23:41:24.383 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7279/WeatherForecast - - - 200 - application/json;+charset=utf-8 104.3152ms
+2022-09-05 23:53:42.196 +07:00 [INF] Application is shutting down...
