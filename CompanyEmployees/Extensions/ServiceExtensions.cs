@@ -1,3 +1,8 @@
+using Contracts;
+using Repository;
+using Service;
+using Service.Contracts;
+
 namespace CompanyEmployees.Extensions;
 
 public static class ServiceExtensions
@@ -19,4 +24,14 @@ public static class ServiceExtensions
         {
 
         });
+
+    public static void ConfigureRepositoryManager(this IServiceCollection services)
+    {
+        services.AddScoped(typeof(IRepositoryBase<>), typeof(RepositoryBase<>));
+        services.AddScoped<ICompanyRepository, CompanyRepository>();
+        services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+        services.AddScoped<ICompanyService, CompanyService>();
+        services.AddScoped<IEmployeeService, EmployeeService>();
+        services.AddScoped<IUnitOfWork, UnitOfWork>();
+    }
 }
