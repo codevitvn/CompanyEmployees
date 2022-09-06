@@ -1223,3 +1223,212 @@ WHERE [e].[CompanyId] = @__companyId_0 AND [e].[EmployeeId] = @__id_1
 2022-09-06 23:42:21.266 +07:00 [INF] Executed endpoint 'CompanyEmployees.Presentation.Controllers.EmployeeController.GetCompany (CompanyEmployees.Presentation)'
 2022-09-06 23:42:21.267 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7279/api/companies/c9d4c053-49b6-410c-bc78-2d54a9991870/employees/80abbca8-664d-4b20-b5de-024705497d4a - - - 200 - application/json;+charset=utf-8 7.2693ms
 2022-09-06 23:42:29.589 +07:00 [INF] Application is shutting down...
+2022-09-06 23:48:59.139 +07:00 [INF] Now listening on: https://localhost:7279
+2022-09-06 23:48:59.168 +07:00 [INF] Now listening on: http://localhost:5279
+2022-09-06 23:48:59.173 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-06 23:48:59.174 +07:00 [INF] Hosting environment: Development
+2022-09-06 23:48:59.174 +07:00 [INF] Content root path: C:\2.projects\study\UltimateWebApi\CompanyEmployees\CompanyEmployees\
+2022-09-06 23:48:59.603 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7279/swagger/index.html - -
+2022-09-06 23:48:59.773 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7279/swagger/index.html - - - 200 - text/html;charset=utf-8 173.8546ms
+2022-09-06 23:49:00.059 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7279/swagger/v1/swagger.json - -
+2022-09-06 23:49:00.149 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7279/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 89.3013ms
+2022-09-06 23:49:21.558 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7279/api/companies - -
+2022-09-06 23:49:21.567 +07:00 [INF] Executing endpoint 'CompanyEmployees.Presentation.Controllers.CompanyController.GetCompanies (CompanyEmployees.Presentation)'
+2022-09-06 23:49:21.583 +07:00 [INF] Route matched with {action = "GetCompanies", controller = "Company"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCompanies() on controller CompanyEmployees.Presentation.Controllers.CompanyController (CompanyEmployees.Presentation).
+2022-09-06 23:49:22.752 +07:00 [INF] Entity Framework Core 7.0.0-preview.7.22376.2 initialized 'CompanyEmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.0-preview.7.22376.2' with options: None
+2022-09-06 23:49:23.348 +07:00 [INF] Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+ORDER BY [c].[Name]
+2022-09-06 23:49:23.407 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.Contracts.DTO.CompanyDto, Service.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-06 23:49:23.419 +07:00 [INF] Executed action CompanyEmployees.Presentation.Controllers.CompanyController.GetCompanies (CompanyEmployees.Presentation) in 1830.4938ms
+2022-09-06 23:49:23.419 +07:00 [INF] Executed endpoint 'CompanyEmployees.Presentation.Controllers.CompanyController.GetCompanies (CompanyEmployees.Presentation)'
+2022-09-06 23:49:23.428 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7279/api/companies - - - 200 - application/json;+charset=utf-8 1870.4355ms
+2022-09-06 23:51:05.718 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7279/api/companies - -
+2022-09-06 23:51:05.718 +07:00 [INF] Executing endpoint 'CompanyEmployees.Presentation.Controllers.CompanyController.GetCompanies (CompanyEmployees.Presentation)'
+2022-09-06 23:51:05.719 +07:00 [INF] Route matched with {action = "GetCompanies", controller = "Company"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCompanies() on controller CompanyEmployees.Presentation.Controllers.CompanyController (CompanyEmployees.Presentation).
+2022-09-06 23:51:05.776 +07:00 [INF] Entity Framework Core 7.0.0-preview.7.22376.2 initialized 'CompanyEmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.0-preview.7.22376.2' with options: None
+2022-09-06 23:51:05.787 +07:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+ORDER BY [c].[Name]
+2022-09-06 23:51:05.788 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.Contracts.DTO.CompanyDto, Service.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-06 23:51:05.792 +07:00 [INF] Executed action CompanyEmployees.Presentation.Controllers.CompanyController.GetCompanies (CompanyEmployees.Presentation) in 73.7484ms
+2022-09-06 23:51:05.793 +07:00 [INF] Executed endpoint 'CompanyEmployees.Presentation.Controllers.CompanyController.GetCompanies (CompanyEmployees.Presentation)'
+2022-09-06 23:51:05.793 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7279/api/companies - - - 200 - application/json;+charset=utf-8 74.8201ms
+2022-09-06 23:51:49.241 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7279/api/companies - -
+2022-09-06 23:51:49.242 +07:00 [INF] Executing endpoint 'CompanyEmployees.Presentation.Controllers.CompanyController.GetCompanies (CompanyEmployees.Presentation)'
+2022-09-06 23:51:49.242 +07:00 [INF] Route matched with {action = "GetCompanies", controller = "Company"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCompanies() on controller CompanyEmployees.Presentation.Controllers.CompanyController (CompanyEmployees.Presentation).
+2022-09-06 23:51:49.253 +07:00 [INF] Entity Framework Core 7.0.0-preview.7.22376.2 initialized 'CompanyEmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.0-preview.7.22376.2' with options: None
+2022-09-06 23:51:49.257 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+ORDER BY [c].[Name]
+2022-09-06 23:51:49.288 +07:00 [WRN] An error occurred while trying to create an XmlSerializer for the type 'System.Collections.Generic.List`1[[Service.Contracts.DTO.CompanyDto, Service.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+System.InvalidOperationException: Service.Contracts.DTO.CompanyDto cannot be serialized because it does not have a parameterless constructor.
+   at System.Xml.Serialization.TypeDesc.CheckSupported()
+   at System.Xml.Serialization.TypeDesc.CheckSupported()
+   at System.Xml.Serialization.TypeScope.GetTypeDesc(Type type, MemberInfo source, Boolean directReference, Boolean throwOnError)
+   at System.Xml.Serialization.ModelScope.GetTypeModel(Type type, Boolean directReference)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type)
+   at Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.CreateSerializer(Type type)
+2022-09-06 23:51:49.298 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.Contracts.DTO.CompanyDto, Service.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-06 23:51:49.299 +07:00 [INF] Executed action CompanyEmployees.Presentation.Controllers.CompanyController.GetCompanies (CompanyEmployees.Presentation) in 56.748ms
+2022-09-06 23:51:49.299 +07:00 [INF] Executed endpoint 'CompanyEmployees.Presentation.Controllers.CompanyController.GetCompanies (CompanyEmployees.Presentation)'
+2022-09-06 23:51:49.299 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7279/api/companies - - - 200 - application/json;+charset=utf-8 57.7290ms
+2022-09-06 23:51:51.757 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7279/api/companies - -
+2022-09-06 23:51:51.758 +07:00 [INF] Executing endpoint 'CompanyEmployees.Presentation.Controllers.CompanyController.GetCompanies (CompanyEmployees.Presentation)'
+2022-09-06 23:51:51.758 +07:00 [INF] Route matched with {action = "GetCompanies", controller = "Company"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCompanies() on controller CompanyEmployees.Presentation.Controllers.CompanyController (CompanyEmployees.Presentation).
+2022-09-06 23:51:51.758 +07:00 [INF] Entity Framework Core 7.0.0-preview.7.22376.2 initialized 'CompanyEmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.0-preview.7.22376.2' with options: None
+2022-09-06 23:51:51.763 +07:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+ORDER BY [c].[Name]
+2022-09-06 23:51:51.764 +07:00 [WRN] An error occurred while trying to create an XmlSerializer for the type 'System.Collections.Generic.List`1[[Service.Contracts.DTO.CompanyDto, Service.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+System.InvalidOperationException: Service.Contracts.DTO.CompanyDto cannot be serialized because it does not have a parameterless constructor.
+   at System.Xml.Serialization.TypeDesc.CheckSupported()
+   at System.Xml.Serialization.TypeDesc.CheckSupported()
+   at System.Xml.Serialization.TypeScope.GetTypeDesc(Type type, MemberInfo source, Boolean directReference, Boolean throwOnError)
+   at System.Xml.Serialization.ModelScope.GetTypeModel(Type type, Boolean directReference)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type)
+   at Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.CreateSerializer(Type type)
+2022-09-06 23:51:51.764 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.Contracts.DTO.CompanyDto, Service.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-06 23:51:51.764 +07:00 [INF] Executed action CompanyEmployees.Presentation.Controllers.CompanyController.GetCompanies (CompanyEmployees.Presentation) in 6.3651ms
+2022-09-06 23:51:51.764 +07:00 [INF] Executed endpoint 'CompanyEmployees.Presentation.Controllers.CompanyController.GetCompanies (CompanyEmployees.Presentation)'
+2022-09-06 23:51:51.764 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7279/api/companies - - - 200 - application/json;+charset=utf-8 6.7744ms
+2022-09-06 23:53:07.921 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7279/api/companies - -
+2022-09-06 23:53:07.921 +07:00 [INF] Executing endpoint 'CompanyEmployees.Presentation.Controllers.CompanyController.GetCompanies (CompanyEmployees.Presentation)'
+2022-09-06 23:53:07.922 +07:00 [INF] Route matched with {action = "GetCompanies", controller = "Company"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCompanies() on controller CompanyEmployees.Presentation.Controllers.CompanyController (CompanyEmployees.Presentation).
+2022-09-06 23:53:07.922 +07:00 [INF] Entity Framework Core 7.0.0-preview.7.22376.2 initialized 'CompanyEmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.0-preview.7.22376.2' with options: None
+2022-09-06 23:53:07.926 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+ORDER BY [c].[Name]
+2022-09-06 23:53:07.927 +07:00 [WRN] An error occurred while trying to create an XmlSerializer for the type 'System.Collections.Generic.List`1[[Service.Contracts.DTO.CompanyDto, Service.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+System.InvalidOperationException: Service.Contracts.DTO.CompanyDto cannot be serialized because it does not have a parameterless constructor.
+   at System.Xml.Serialization.TypeDesc.CheckSupported()
+   at System.Xml.Serialization.TypeDesc.CheckSupported()
+   at System.Xml.Serialization.TypeScope.GetTypeDesc(Type type, MemberInfo source, Boolean directReference, Boolean throwOnError)
+   at System.Xml.Serialization.ModelScope.GetTypeModel(Type type, Boolean directReference)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type)
+   at Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.CreateSerializer(Type type)
+2022-09-06 23:53:07.927 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.Contracts.DTO.CompanyDto, Service.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-06 23:53:07.927 +07:00 [INF] Executed action CompanyEmployees.Presentation.Controllers.CompanyController.GetCompanies (CompanyEmployees.Presentation) in 5.7476ms
+2022-09-06 23:53:07.927 +07:00 [INF] Executed endpoint 'CompanyEmployees.Presentation.Controllers.CompanyController.GetCompanies (CompanyEmployees.Presentation)'
+2022-09-06 23:53:07.927 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7279/api/companies - - - 200 - application/json;+charset=utf-8 6.2466ms
+2022-09-06 23:53:09.240 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7279/api/companies - -
+2022-09-06 23:53:09.240 +07:00 [INF] Executing endpoint 'CompanyEmployees.Presentation.Controllers.CompanyController.GetCompanies (CompanyEmployees.Presentation)'
+2022-09-06 23:53:09.240 +07:00 [INF] Route matched with {action = "GetCompanies", controller = "Company"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCompanies() on controller CompanyEmployees.Presentation.Controllers.CompanyController (CompanyEmployees.Presentation).
+2022-09-06 23:53:09.241 +07:00 [INF] Entity Framework Core 7.0.0-preview.7.22376.2 initialized 'CompanyEmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.0-preview.7.22376.2' with options: None
+2022-09-06 23:53:09.244 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+ORDER BY [c].[Name]
+2022-09-06 23:53:09.245 +07:00 [WRN] An error occurred while trying to create an XmlSerializer for the type 'System.Collections.Generic.List`1[[Service.Contracts.DTO.CompanyDto, Service.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+System.InvalidOperationException: Service.Contracts.DTO.CompanyDto cannot be serialized because it does not have a parameterless constructor.
+   at System.Xml.Serialization.TypeDesc.CheckSupported()
+   at System.Xml.Serialization.TypeDesc.CheckSupported()
+   at System.Xml.Serialization.TypeScope.GetTypeDesc(Type type, MemberInfo source, Boolean directReference, Boolean throwOnError)
+   at System.Xml.Serialization.ModelScope.GetTypeModel(Type type, Boolean directReference)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type)
+   at Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.CreateSerializer(Type type)
+2022-09-06 23:53:09.245 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.Contracts.DTO.CompanyDto, Service.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-06 23:53:09.245 +07:00 [INF] Executed action CompanyEmployees.Presentation.Controllers.CompanyController.GetCompanies (CompanyEmployees.Presentation) in 5.3328ms
+2022-09-06 23:53:09.245 +07:00 [INF] Executed endpoint 'CompanyEmployees.Presentation.Controllers.CompanyController.GetCompanies (CompanyEmployees.Presentation)'
+2022-09-06 23:53:09.246 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7279/api/companies - - - 200 - application/json;+charset=utf-8 5.7646ms
+2022-09-06 23:53:10.016 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7279/api/companies - -
+2022-09-06 23:53:10.016 +07:00 [INF] Executing endpoint 'CompanyEmployees.Presentation.Controllers.CompanyController.GetCompanies (CompanyEmployees.Presentation)'
+2022-09-06 23:53:10.016 +07:00 [INF] Route matched with {action = "GetCompanies", controller = "Company"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCompanies() on controller CompanyEmployees.Presentation.Controllers.CompanyController (CompanyEmployees.Presentation).
+2022-09-06 23:53:10.017 +07:00 [INF] Entity Framework Core 7.0.0-preview.7.22376.2 initialized 'CompanyEmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.0-preview.7.22376.2' with options: None
+2022-09-06 23:53:10.021 +07:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+ORDER BY [c].[Name]
+2022-09-06 23:53:10.022 +07:00 [WRN] An error occurred while trying to create an XmlSerializer for the type 'System.Collections.Generic.List`1[[Service.Contracts.DTO.CompanyDto, Service.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+System.InvalidOperationException: Service.Contracts.DTO.CompanyDto cannot be serialized because it does not have a parameterless constructor.
+   at System.Xml.Serialization.TypeDesc.CheckSupported()
+   at System.Xml.Serialization.TypeDesc.CheckSupported()
+   at System.Xml.Serialization.TypeScope.GetTypeDesc(Type type, MemberInfo source, Boolean directReference, Boolean throwOnError)
+   at System.Xml.Serialization.ModelScope.GetTypeModel(Type type, Boolean directReference)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type)
+   at Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.CreateSerializer(Type type)
+2022-09-06 23:53:10.022 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.Contracts.DTO.CompanyDto, Service.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-06 23:53:10.023 +07:00 [INF] Executed action CompanyEmployees.Presentation.Controllers.CompanyController.GetCompanies (CompanyEmployees.Presentation) in 6.3404ms
+2022-09-06 23:53:10.023 +07:00 [INF] Executed endpoint 'CompanyEmployees.Presentation.Controllers.CompanyController.GetCompanies (CompanyEmployees.Presentation)'
+2022-09-06 23:53:10.023 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7279/api/companies - - - 200 - application/json;+charset=utf-8 6.9820ms
+2022-09-06 23:54:48.159 +07:00 [INF] Application is shutting down...
+2022-09-06 23:54:55.035 +07:00 [INF] Now listening on: https://localhost:7279
+2022-09-06 23:54:55.066 +07:00 [INF] Now listening on: http://localhost:5279
+2022-09-06 23:54:55.071 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-06 23:54:55.071 +07:00 [INF] Hosting environment: Development
+2022-09-06 23:54:55.071 +07:00 [INF] Content root path: C:\2.projects\study\UltimateWebApi\CompanyEmployees\CompanyEmployees\
+2022-09-06 23:54:55.543 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7279/swagger/index.html - -
+2022-09-06 23:54:55.682 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7279/swagger/index.html - - - 200 - text/html;charset=utf-8 141.4400ms
+2022-09-06 23:54:55.953 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7279/swagger/v1/swagger.json - -
+2022-09-06 23:54:56.054 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7279/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 101.0394ms
+2022-09-06 23:55:43.562 +07:00 [INF] Application is shutting down...
+2022-09-06 23:57:09.697 +07:00 [INF] Now listening on: https://localhost:7279
+2022-09-06 23:57:09.725 +07:00 [INF] Now listening on: http://localhost:5279
+2022-09-06 23:57:09.730 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-06 23:57:09.731 +07:00 [INF] Hosting environment: Development
+2022-09-06 23:57:09.731 +07:00 [INF] Content root path: C:\2.projects\study\UltimateWebApi\CompanyEmployees\CompanyEmployees\
+2022-09-06 23:57:10.382 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7279/swagger/index.html - -
+2022-09-06 23:57:10.541 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7279/swagger/index.html - - - 200 - text/html;charset=utf-8 162.6517ms
+2022-09-06 23:57:10.828 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7279/swagger/v1/swagger.json - -
+2022-09-06 23:57:10.938 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7279/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 110.7271ms
+2022-09-06 23:57:59.220 +07:00 [INF] Application is shutting down...
+2022-09-06 23:58:19.280 +07:00 [INF] Now listening on: https://localhost:7279
+2022-09-06 23:58:19.316 +07:00 [INF] Now listening on: http://localhost:5279
+2022-09-06 23:58:19.321 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-06 23:58:19.322 +07:00 [INF] Hosting environment: Development
+2022-09-06 23:58:19.322 +07:00 [INF] Content root path: C:\2.projects\study\UltimateWebApi\CompanyEmployees\CompanyEmployees\
+2022-09-06 23:58:19.528 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7279/swagger/index.html - -
+2022-09-06 23:58:19.679 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7279/swagger/index.html - - - 200 - text/html;charset=utf-8 154.8419ms
+2022-09-06 23:58:19.998 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7279/swagger/v1/swagger.json - -
+2022-09-06 23:58:20.076 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7279/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 78.6409ms
+2022-09-06 23:58:30.144 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7279/api/companies - -
+2022-09-06 23:58:30.153 +07:00 [INF] Executing endpoint 'CompanyEmployees.Presentation.Controllers.CompanyController.GetCompanies (CompanyEmployees.Presentation)'
+2022-09-06 23:58:30.171 +07:00 [INF] Route matched with {action = "GetCompanies", controller = "Company"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCompanies() on controller CompanyEmployees.Presentation.Controllers.CompanyController (CompanyEmployees.Presentation).
+2022-09-06 23:58:31.343 +07:00 [INF] Entity Framework Core 7.0.0-preview.7.22376.2 initialized 'CompanyEmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.0-preview.7.22376.2' with options: None
+2022-09-06 23:58:31.944 +07:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+ORDER BY [c].[Name]
+2022-09-06 23:58:32.008 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.Contracts.DTO.CompanyDto, Service.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-06 23:58:32.021 +07:00 [INF] Executed action CompanyEmployees.Presentation.Controllers.CompanyController.GetCompanies (CompanyEmployees.Presentation) in 1844.1242ms
+2022-09-06 23:58:32.021 +07:00 [INF] Executed endpoint 'CompanyEmployees.Presentation.Controllers.CompanyController.GetCompanies (CompanyEmployees.Presentation)'
+2022-09-06 23:58:32.032 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7279/api/companies - - - 200 - application/json;+charset=utf-8 1887.4540ms
+2022-09-06 23:59:11.466 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7279/api/companies - -
+2022-09-06 23:59:11.466 +07:00 [INF] Executing endpoint 'CompanyEmployees.Presentation.Controllers.CompanyController.GetCompanies (CompanyEmployees.Presentation)'
+2022-09-06 23:59:11.467 +07:00 [INF] Route matched with {action = "GetCompanies", controller = "Company"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCompanies() on controller CompanyEmployees.Presentation.Controllers.CompanyController (CompanyEmployees.Presentation).
+2022-09-06 23:59:11.511 +07:00 [INF] Entity Framework Core 7.0.0-preview.7.22376.2 initialized 'CompanyEmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.0-preview.7.22376.2' with options: None
+2022-09-06 23:59:11.520 +07:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+ORDER BY [c].[Name]
+2022-09-06 23:59:11.570 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.Contracts.DTO.CompanyDto, Service.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-06 23:59:11.582 +07:00 [INF] Executed action CompanyEmployees.Presentation.Controllers.CompanyController.GetCompanies (CompanyEmployees.Presentation) in 114.6243ms
+2022-09-06 23:59:11.582 +07:00 [INF] Executed endpoint 'CompanyEmployees.Presentation.Controllers.CompanyController.GetCompanies (CompanyEmployees.Presentation)'
+2022-09-06 23:59:11.582 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7279/api/companies - - - 200 459 text/xml;+charset=utf-8 115.6874ms
+2022-09-06 23:59:55.610 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7279/api/companies - -
+2022-09-06 23:59:55.610 +07:00 [INF] Executing endpoint 'CompanyEmployees.Presentation.Controllers.CompanyController.GetCompanies (CompanyEmployees.Presentation)'
+2022-09-06 23:59:55.611 +07:00 [INF] Route matched with {action = "GetCompanies", controller = "Company"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCompanies() on controller CompanyEmployees.Presentation.Controllers.CompanyController (CompanyEmployees.Presentation).
+2022-09-06 23:59:55.623 +07:00 [INF] Entity Framework Core 7.0.0-preview.7.22376.2 initialized 'CompanyEmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.0-preview.7.22376.2' with options: None
+2022-09-06 23:59:55.628 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+ORDER BY [c].[Name]
+2022-09-06 23:59:55.628 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.Contracts.DTO.CompanyDto, Service.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-06 23:59:55.629 +07:00 [INF] Executed action CompanyEmployees.Presentation.Controllers.CompanyController.GetCompanies (CompanyEmployees.Presentation) in 18.0888ms
+2022-09-06 23:59:55.629 +07:00 [INF] Executed endpoint 'CompanyEmployees.Presentation.Controllers.CompanyController.GetCompanies (CompanyEmployees.Presentation)'
+2022-09-06 23:59:55.629 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7279/api/companies - - - 200 - text/json;+charset=utf-8 19.1083ms

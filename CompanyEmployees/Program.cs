@@ -19,7 +19,12 @@ builder.Services.AddDbContext<CompanyEmployeeContext>(options =>
                          "server=.; database=CompanyEmployee; Integrated Security=true"));
 builder.Services.ConfigureRepositoryManager();
 
-builder.Services.AddControllers()
+builder.Services.AddControllers(cfg =>
+    {
+        cfg.RespectBrowserAcceptHeader = true;
+        cfg.ReturnHttpNotAcceptable = true;
+    })
+    .AddXmlSerializerFormatters()
     .AddApplicationPart(typeof(CompanyEmployees.Presentation.AssemblyReference).Assembly);
 
 builder.Services.AddAutoMapper(typeof(CompanyService));
